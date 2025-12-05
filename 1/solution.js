@@ -1,10 +1,7 @@
 import { mod, readRows } from '../advent.js';
 
-const rows = readRows('1/input.txt');
-// const rows = readRows('1/test-input.txt');
-
-function part1() {
-  const result = rows
+export function part1(inputFile) {
+  const result = readRows(inputFile)
     .map((row) => [row.slice(0, 1), parseInt(row.slice(1))])
     .reduce(
       (acc, cur) => {
@@ -17,11 +14,11 @@ function part1() {
       [50, 0]
     )[1];
 
-  console.log('Part 1:', result);
+  return result;
 }
 
-function part2() {
-  const result = rows
+export function part2(inputFile) {
+  const result = readRows(inputFile)
     .map((row) => [row.slice(0, 1), parseInt(row.slice(1))])
     .reduce(
       (acc, cur) => {
@@ -43,8 +40,5 @@ function part2() {
       [50, 0]
     )[1];
 
-  console.log('Part 2:', result);
+  return result;
 }
-
-part1();
-part2();

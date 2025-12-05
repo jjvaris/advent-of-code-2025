@@ -1,11 +1,9 @@
 import { readRows } from '../advent.js';
 
-// const rows = readRows('0/input.txt');
-// const rows = readRows('0/test-input.txt');
+export function part1(input) {
+  const rows = readRows(input);
+}
 
-function part1() {}
-
-function part2() {}
-
-part1();
-part2();
+export function part2(input) {
+  const rows = readRows(input);
+}
